@@ -51,13 +51,14 @@ public class ScopedVariables {
         displayValues();
 
         //Business logic that modifies values of Variables
-        gender = 'f';
+        /*gender = 'f';
         age = 16;
         age = age - 1;
         weekDay = "Monday";
         status = false;
         weekDays[1] = "Saturday";
-
+*/
+        businessLogic();
         //Display values
         System.out.println("\n");//new lines
         System.out.println("Values after business logic:");
@@ -81,4 +82,13 @@ public class ScopedVariables {
         System.out.println("Status:" + status);
         System.out.println("2nd value from Weekdays array:" + weekDays[1]);
     }//displayValues method ends
+
+    public void businessLogic() {
+        gender = 'f';
+        age = 16;
+        age = age + 1;
+        weekDay = "Monday";
+        status = false;
+        weekDays[1] = "Saturday";
+    }//method businesslogic ends
 }//class ends

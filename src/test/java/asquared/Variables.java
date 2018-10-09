@@ -20,7 +20,8 @@ public class Variables {
         weekDay = "Sunday";
 
         //Variables can be declared and initiated at the same time like below
-        String weekDays[] = new String[]{"Sunday", "Monday", "Tuesday"}; //String array
+        String weekDays[] = new String[]{"Sunday",
+                "Monday", "Tuesday"}; //String array
         boolean status = true;// Boolean variable can hold ONLY either true or false (no other data it accepts)
 
         //Display values
@@ -44,6 +45,7 @@ public class Variables {
         //Business logic that modifies values of Variables
         gender = 'f';
         age = 16;
+        age = age - 1;
         weekDay = "Monday";
         status = false;
         weekDays[1] = "Saturday";
