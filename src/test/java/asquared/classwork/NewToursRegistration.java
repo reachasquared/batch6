@@ -69,6 +69,9 @@ public class NewToursRegistration {
                 .isDisplayed());
 
         // Verify REGISTER image is displayed
+        assertTrue(driver.findElement(
+                By.cssSelector("img[src=\"/images/masts/mast_register.gif\"]"))
+                .isDisplayed());
 
         //click SIGN-OFF
         driver.findElement(By.linkText("SIGN-OFF")).click();
