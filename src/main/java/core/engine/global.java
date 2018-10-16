@@ -1,5 +1,7 @@
 package core.engine;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -13,6 +15,7 @@ public class global {
     public String baseUrl;
     public boolean acceptNextAlert = true;
     public StringBuffer verificationErrors = new StringBuffer();
+    public Logger logger = LogManager.getLogger("test");
 
     @Before
     public void setUp() throws Exception {

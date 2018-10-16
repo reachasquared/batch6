@@ -2,36 +2,20 @@ package asquared.classwork;
 
 import core.engine.global;
 import org.junit.Test;
-import org.openqa.selenium.By;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-public class Navigation extends global {
+public class NavigationXpath extends global {
     @Test
-    public void navigation() {
+    public void navigationXpath() {
 
 //Step 1	Go to http://newtours.demoaut.com
-        logger.info("Step 1: Go to http://newtours.demoaut.com");
-        driver.get(baseUrl);
 
 //Assert page title : Welcome: Mercury Tours
-        logger.info("Assert page title : Welcome: Mercury Tours");
-        assertEquals("Welcome: Mercury Tours",
-                driver.getTitle());
 
 //Step 2	Click on SIGN-ON link in Header
-        logger.info("Step 2: Click on SIGN-ON link in Header");
-        //driver.findElement(By.linkText("SIGN-ON")).click();
-        driver.findElement(By.xpath("//a[text()='SIGN-ON']"))
-                .click();
 
 //Assert page title : Sign-on: Mercury Tours
-        //assertEquals("Sign-on: Mercury Tours",
-        //       driver.getTitle());
 
 //Step 3	Click on SUPPORT link in Header
-        assertTrue(driver.findElement(By.xpath("//font[contains(text(),'To create')]")).isDisplayed());
 
 //Assert page title : Under Construction: Mercury Tours
 
@@ -68,4 +52,4 @@ public class Navigation extends global {
 //Assert page title : Under Construction: Mercury Tours
 
     }//method ends
-}// class ends
+}//class end
