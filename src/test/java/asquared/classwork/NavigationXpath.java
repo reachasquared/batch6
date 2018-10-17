@@ -8,8 +8,11 @@ public class NavigationXpath extends global {
     public void navigationXpath() {
 
 //Step 1	Go to http://newtours.demoaut.com
+        logger.info("Step 1: Go to http://newtours.demoaut.com");
+        driver.get(baseUrl);
 
 //Assert page title : Welcome: Mercury Tours
+        logger.info("Assert page title : Welcome: Mercury Tours");
 
 //Step 2	Click on SIGN-ON link in Header
 
